@@ -39,7 +39,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo "thank you"
+                        script: echo "thank you new commmit"
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
