@@ -29,6 +29,20 @@ pipeline:
                   spec:
                     skipDryRun: false
                     pruningEnabled: false
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "thank you"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
             rollbackSteps:
               - step:
                   name: Rollback Rollout Deployment
