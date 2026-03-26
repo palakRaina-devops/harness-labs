@@ -23,7 +23,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: qsa
+                        script: qsahbasbjas
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
