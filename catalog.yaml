@@ -1,0 +1,20 @@
+apiVersion: harness.io/v1
+kind: Component
+type: website
+identifier: artistreact
+name: artist-react
+owner: user:account/palak.raina@harness.io
+orgIdentifier: default
+projectIdentifier: bootcampcipalak
+spec:
+  lifecycle: depreceated
+  sourceCode:
+    provider: Harness
+    repoName: account.harness-filestore
+    connectorRef: ''
+    branch: main
+    monoRepo: false
+    url: https://app.harness.io/ng/account/B8Q-sZ47TVWHi3jS5r2CSQ/module/code/repos/harness-filestore/files/main/~/
+metadata:
+  tags:
+  - react
