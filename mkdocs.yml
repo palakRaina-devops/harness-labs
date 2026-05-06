@@ -1,6 +1,6 @@
 site_name: 'Example Documentation'
-repo_url: https://github.com/backstage/backstage
-edit_uri: edit/master/plugins/techdocs-backend/examples/documented-component/docs
+repo_url: https://github.com/palakRaina-devops/harness-labs/
+edit_uri: edit/main/docs
 
 nav:
   - Home: index.md
@@ -15,3 +15,5 @@ nav:
 
 plugins:
   - techdocs-core
+
+
