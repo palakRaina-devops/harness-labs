@@ -16,7 +16,7 @@ spec:
     monoRepo: false
     url: https://app.harness.io/ng/account/B8Q-sZ47TVWHi3jS5r2CSQ/module/code/repos/harness-filestore/files/main/~/
     dependsOn:
-    - component:custom_comp
+    - component: custom_comp
 metadata:
   annotations:
     backstage.io/techdocs-ref: value
