@@ -20,7 +20,7 @@ spec:
     system:
     - system:account.default.bootcampcipalak/test-system
   partOf:
-  - system:account.default.bootcampcipalak/test-system
+  - system:account.default.bootcampcipalak/testsystem
   dependsOn:
   - component:account/custom_comp
 metadata:
