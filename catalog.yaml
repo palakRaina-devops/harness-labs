@@ -19,8 +19,6 @@ spec:
     - component:account/custom_comp
     system:
     - system:account.default.bootcampcipalak/test-system
-    partOf:
-    - system:account.default.bootcampcipalak/test-system
   partOf:
   - system:account.default.bootcampcipalak/test-system
   dependsOn:
