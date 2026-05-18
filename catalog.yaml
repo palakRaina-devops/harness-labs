@@ -8,6 +8,13 @@ orgIdentifier: default
 projectIdentifier: bootcampcipalak
 spec:
   lifecycle: Production
+  sourceCode:
+    provider: Github
+    repoName: harness-labs
+    connectorRef: account.ghallaccess
+    branch: main
+    monoRepo: false
+    url: https://github.com/palakRaina-devops/harness-labs/tree/main
   dependsOn:
   - component:account/custom_comp
 metadata:
