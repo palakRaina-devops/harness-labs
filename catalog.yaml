@@ -15,8 +15,6 @@ spec:
     branch: main
     monoRepo: false
     url: https://github.com/palakRaina-devops/harness-labs/tree/main
-  system:
-  - system:account.default.bootcampcipalak/test-system
 metadata:
   annotations:
     backstage.io/techdocs-ref: value
