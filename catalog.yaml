@@ -7,7 +7,7 @@ owner: user:account/palak.raina@harness.io
 orgIdentifier: default
 projectIdentifier: bootcampcipalak
 spec:
-  lifecycle: depreceated
+  lifecycle: Production
   sourceCode:
     provider: Harness
     repoName: account.harness-filestore
