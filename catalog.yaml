@@ -23,7 +23,17 @@ spec:
   - system:account.default.bootcampcipalak/testsystem
   dependsOn:
   - component:account/custom_comp
+  items:
+  - label: Team Lead
+    value: <+metadata.additionalInfo.teamLead>
+    type: string
+  - label: Runbook
+    value: <+metadata.additionalInfo.runbookUrl>
+    type: link
 metadata:
+  additionalInfo:
+    teamLead: John Doe
+    runbookUrl: https://wiki/runbook
   annotations:
     backstage.io/techdocs-ref: value
   tags:
