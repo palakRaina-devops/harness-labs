@@ -1,7 +1,6 @@
 pipeline:
   name: test_pipe
   identifier: test_pipe
-  projectIdentifier: palak_labs
   tags: {}
   stages:
     - stage:
