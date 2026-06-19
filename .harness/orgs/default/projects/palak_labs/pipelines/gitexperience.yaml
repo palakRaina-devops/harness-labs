@@ -2,7 +2,6 @@ pipeline:
   name: git-experience
   identifier: gitexperience
   projectIdentifier: palak_labs
-  orgIdentifier: default
   tags: {}
   stages:
     - stage:
