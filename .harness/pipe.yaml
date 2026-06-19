@@ -1,35 +1,29 @@
 pipeline:
-  name: pipe
-  identifier: pipe
-  tags: {}
-  template:
-    templateRef: pipeline_temp
-    versionLabel: V1
-    templateInputs:
-      properties:
-        ci:
-          codebase:
-            build: <+input>
-      stages:
-        - stage:
-            identifier: testStage
-            template:
-              templateInputs:
-                type: CI
-                spec:
-                  execution:
-                    steps:
-                      - step:
-                          identifier: Run_2
-                          type: Run
-                          spec:
-                            connectorRef: <+input>
-                            image: <+input>
-                            shell: <+input>
-                  infrastructure:
-                    type: KubernetesDirect
-                    spec:
-                      connectorRef: <+input>
-                      namespace: <+input>
+  name: test_pipe
+  identifier: test_pipe
   projectIdentifier: palak_labs
-  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "hello"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
