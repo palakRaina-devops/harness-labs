@@ -2,7 +2,6 @@ pipeline:
   name: test_pipe
   identifier: test_pipe
   projectIdentifier: palak_labs
-  orgIdentifier: default
   tags: {}
   stages:
     - stage:
