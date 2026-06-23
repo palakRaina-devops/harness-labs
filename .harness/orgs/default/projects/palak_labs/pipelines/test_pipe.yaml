@@ -25,10 +25,11 @@ pipeline:
                         script: |-
                           echo "hello"
 
-                          curl -v http://172.31.19.78:5985/wsman
-                          # Test WinRM HTTP from Linux
-                          curl -v http://ec2-3-129-60-224.us-east-2.compute.amazonaws.com:5985/wsman \
-                            -H "Content-Type: application/soap+xml;charset=UTF-8"
+                          microdnf install -y nmap-ncat
+                          nc -h
+
+                          nc -zv 172.31.19.78 3389
+                          nc -zv 172.31.19.78 5985
                     environmentVariables: []
                     outputVariables: []
                     delegateSelectors:
