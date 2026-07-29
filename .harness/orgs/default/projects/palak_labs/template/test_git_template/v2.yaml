@@ -15,7 +15,7 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "hello testing template"
+          script: echo "hello testing template test"
       environmentVariables: []
       outputVariables: []
   versionLabel: v2
