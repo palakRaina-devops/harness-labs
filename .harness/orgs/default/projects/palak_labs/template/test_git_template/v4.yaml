@@ -1,0 +1,21 @@
+template:
+  name: test_git_template
+  identifier: test_git_template
+  type: Step
+  projectIdentifier: palak_labs
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: echo "hello testing template test new very latest v4.yaml test"
+      environmentVariables: []
+      outputVariables: []
+  versionLabel: v3
