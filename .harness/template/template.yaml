@@ -3,7 +3,6 @@ template:
   identifier: temp
   versionLabel: v1
   type: Step
-  orgIdentifier: default
   tags: {}
   spec:
     timeout: 10m
