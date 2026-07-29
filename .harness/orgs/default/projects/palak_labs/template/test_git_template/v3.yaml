@@ -15,7 +15,7 @@ template:
       source:
         type: Inline
         spec:
-          script: echo "hello testing template test new very"
+          script: echo "hello testing template test new very latest"
       environmentVariables: []
       outputVariables: []
   versionLabel: v3
