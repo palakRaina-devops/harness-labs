@@ -1,0 +1,30 @@
+pipeline:
+  name: test_git_template
+  identifier: test_git_template
+  projectIdentifier: palak_labs
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: template
+        identifier: template
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo "Testing the repro"
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
